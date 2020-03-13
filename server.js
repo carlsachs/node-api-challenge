@@ -1,6 +1,5 @@
 const express = require('express')
 const helmet = require('helmet')
-const logger = require('./middleware/logger-middleware')
 
 const server = express()
 
@@ -16,4 +15,4 @@ server.get('/', (req, res) => {
 
 server.use('/api/projects', projectRouter)
 
-module.exports = server
+module.exports = server;
